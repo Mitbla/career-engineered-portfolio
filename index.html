@@ -5,16 +5,35 @@
   <title>Career Engineered Portfolio | NJIT UX/UI Designer</title>
   <meta name="description" content="NJIT UX/UI Designer portfolio focused on structured, user-centered digital experiences.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="keywords" content="NJIT UX/UI Designer, UX portfolio, product designer, UI designer, NYC UX">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <a href="/">Career Engineered</a>
+    </div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <ul id="nav-menu" class="nav-list">
+        <li><a href="#case-studies">Case Studies</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.pdf" download>Resume</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
 <header class="hero">
-  <div class="container">
+  <div class="container hero-content">
     <h1>NJIT UX/UI Designer</h1>
-    <p class="subheadline">
-      Crafting intuitive, clean, and elegant digital experiences.
-    </p>
+    <p class="lede">I create intuitive digital experiences focused on clarity, accessibility, and measurable outcomes.</p>
     <div class="cta-buttons">
       <a href="#case-studies" class="btn-primary">View Case Studies</a>
       <a href="resume.pdf" class="btn-secondary" download>Download Resume</a>
@@ -22,39 +41,34 @@
   </div>
 </header>
 
-<section id="case-studies" class="section">
-  <div class="container">
+<!-- Case Studies Section -->
+<main id="main">
+  <section id="case-studies" class="section">
     <h2>Case Studies</h2>
-
-    <div class="case-card">
-      <h3>Vaccination Records UX Redesign</h3>
-      <p>Redesigned a complex healthcare dashboard into a clean, user-centered interface.</p>
+    <div class="cards-container">
+      <article class="card">
+        <h3>Vaccination Records UX Redesign</h3>
+        <p>Redesigned a complex healthcare dashboard into a streamlined, user-friendly interface.</p>
+      </article>
+      <article class="card">
+        <h3>Loan Calculator Optimization</h3>
+        <p>Simplified financial calculations to reduce cognitive load and improve clarity.</p>
+      </article>
+      <article class="card">
+        <h3>System Flow Visualization</h3>
+        <p>Translated backend logic into visual flows for easier understanding.</p>
+      </article>
     </div>
+  </section>
 
-    <div class="case-card">
-      <h3>Loan Calculator Optimization</h3>
-      <p>Simplified financial calculations to reduce cognitive load and improve clarity.</p>
-    </div>
-
-    <div class="case-card">
-      <h3>System Flow Visualization</h3>
-      <p>Translated backend logic into visual flows for easier understanding.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section about">
-  <div class="container">
+<!-- About Section -->
+  <section id="about" class="section about">
     <h2>About Me</h2>
-    <p>
-      I am an NJIT UX/UI Designer passionate about creating interfaces that are clean, elegant, and user-friendly. 
-      My process combines research, prototyping, and design systems thinking.
-    </p>
-  </div>
-</section>
+    <p>I am an NJIT UX/UI Designer passionate about crafting clean, elegant, and intuitive digital products. My process combines research, prototyping, and design systems thinking.</p>
+  </section>
 
-<section class="section skills">
-  <div class="container">
+<!-- Skills Section -->
+  <section id="skills" class="section skills">
     <h2>Skills</h2>
     <ul>
       <li>UX Research</li>
@@ -64,20 +78,26 @@
       <li>Usability Testing</li>
       <li>HTML & CSS</li>
     </ul>
-  </div>
-</section>
+  </section>
 
-<section class="section contact">
-  <div class="container">
+<!-- Contact Section -->
+
+  <section id="contact" class="section contact">
     <h2>Contact</h2>
     <p>Email: your@email.com</p>
     <p>LinkedIn: linkedin.com/in/yourprofile</p>
-  </div>
-</section>
+  </section>
 
+</main>
+
+<!-- Footer -->
 <footer>
-  <p>© 2026 Career Engineered Portfolio</p>
+  <div class="container">
+    <p>© 2026 Career Engineered Portfolio</p>
+  </div>
 </footer>
+
+<script src="script.js" defer></script>
 
 </body>
 </html>
